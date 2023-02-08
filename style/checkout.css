@@ -1,0 +1,47 @@
+#form{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+#form>button{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width:87% ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+#form>input{
+    margin-top: 20px;
+    height: 50px;
+    width:87% ;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+#form1{
+    display: flex;
+}
+#form1>input{
+    margin-top: 20px;
+    height: 50px;
+    width:40% ;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 6.7%;
+    padding-left: 10px;
+}
+#form2{
+    display: flex;
+}
+#form2>input{
+    margin-top: 20px;
+    height: 50px;
+    width:24.7% ;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 6.4%;
+    padding-left: 10px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necklaces</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/Favicon_32x32.jpg?v=1650456214"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/new_page.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+</head>
+<body>
+    <div id="nav"></div>
+    <h1>New</h1>
+
+<div id="price" >
+    <div id="p_div1" >
+        <p>The highest price is $95.00</p>
+        <p>Reset</p>
+    </div>
+    <hr>
+    <div id="p_div2">
+        <label for="">$</label>
+        <input id="dolar1" oninput="dolar_fun1()" placeholder="From" type="number">
+        <label for="">$</label>
+        <input id="dolar2" oninput="dolar_fun2()" placeholder="To" type="number">
+    </div>
+</div>
+
+<div id="availability" >
+    <div id="a_div1" >
+        <p>0 selected</p>
+        <p>Reset</p>
+    </div>
+    <hr>
+    <div id="a_div2" >
+        <div><input type="radio">
+            <label for="">In stock (463)</label></div>
+        <div><input type="radio">
+            <label for="">Out of stock (2)</label></div>
+        
+    </div>
+</div>
+    <div id="function_part" >
+    <div id="div1">
+        <div id="div11" >Filter : Price </div>
+        <div id="div12" ><p>Availability >  </p></div>
+    </div>
+    <div id="div2">
+        <p>Sort by:</p>
+        <select id="select_tag">
+            <option value="">Date, new to old</option>
+            <option value="Featured">Featured</option>
+            <option value="Bestselling">Best Selling</option>
+            <option value="A_Z">Alphabetically,A-Z</option>
+            <option value="Z-A">Alphabetically,Z-A</option>
+            <option value="low to high">Price, Low to high</option>
+            <option value="high to low">Price, High to Low</option>
+            <option value="old new">date,Old to New</option>
+            <option value="new old">Date,New to Old</option>
+        </select>
+        <p id="pro_count" ></p>
+    </div>
+    </div>
+    <div id="contener"></div>
+
+    <div id="pages">
+        <a href="#" class="page">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">...</a>
+        <a href="#" class="page">29</a>
+        <a href="#" class="page">></a>
+      </div>
+    <div id="contener"></div>
+
+    <div id="foot-part"></div>
+</body>
+</html>
+<script type="module">
+    import navbar from './components/navbar.js'
+    let Nav = document.getElementById('nav')
+    Nav.innerHTML = navbar();
+
+    import footer from './components/footer.js'
+    let Foot = document.getElementById('foot-part')
+    Foot.innerHTML = footer()
+</script>
+<script src="./scripts/necklaces.js"></script>

@@ -1,0 +1,367 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #121212;
+}
+#cart-sec {
+  width: 75%;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cart-sec h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+#cart-sec a {
+  color: #121212;
+  text-decoration: none;
+  border-bottom: 1px solid #121212;
+}
+#cart-sec a:hover {
+  border-bottom: 2px solid #121212;
+}
+#cart-table {
+  width: 75%;
+  margin: auto;
+}
+#table-heading {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: auto;
+}
+#table-heading p {
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(61, 61, 61, 0.75);
+}
+.hr-bar {
+  border: none;
+  border-top: 1px solid #e7e7e7;
+  margin-bottom: 40px;
+}
+#total_I{
+  text-align: center;
+  margin-top: 60px;
+  color: rgb(100, 100, 100);
+  font-size: 20px;
+}
+#products-list>div {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+#remove{
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border-radius: 0px;
+  width: 80px;
+  margin-top: 60px;
+}
+#pro_image{
+  height: 164px;
+  width: 110px;
+}
+#prod_description p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+#prod_description p:first-child {
+  border-bottom: 2px solid transparent;
+}
+#prod_description p:first-child:hover {
+  border-bottom: 2px solid #121212;
+  cursor: pointer;
+}
+#prod_description p:last-child {
+  color: rgba(61, 61, 61, 0.75);
+  margin-top: -10px;
+}
+#counter {
+  max-width: 140px;
+  height: 50px;
+  border: 1px solid rgba(123, 123, 123, 0.75);
+  display: flex;
+  align-items: center;
+}
+#counter button {
+  margin: auto;
+  height: 50px;
+  width: 45px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: rgba(26, 26, 26, 0.75);
+}
+#counter button:first-child {
+  font-size: 30px;
+  cursor: pointer;
+}
+#counter button:last-child {
+  font-size: 22px;
+  cursor: pointer;
+}
+#btn-action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#row-price-display {
+  text-align: right;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.fa-trash-o:hover {
+  cursor: pointer;
+}
+#afterpay {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(61, 61, 61, 0.75);
+  line-height: 29px;
+  margin-bottom: 25px;
+}
+#afterpay span {
+  background-color: #b2fce4;
+  color: #121212;
+  padding: 0px 10px 5px 10px;
+  border-radius: 50px;
+  font-weight: bolder;
+}
+#payment-option-sec {
+  width: 75%;
+  margin: auto;
+  text-align: right;
+}
+#subtotal {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #121212;
+}
+#subtotal-text{
+  margin-bottom: 10px;
+}
+#payment-option-sec .text {
+  font-size: 14px;
+}
+.text a {
+  color: #121212;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid #121212;
+  margin-top: 100px;
+}
+.text a:hover {
+  border-bottom: 2px solid #121212;
+}
+#checkout {
+  height: 45px;
+  width: 348px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: #121212;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #000000;
+  outline: 1px solid #000000;
+}
+#shop-pay {
+  background-color: #481cf1;
+  color: white;
+  border: 1px solid #481cf1;
+  margin-bottom: 10px;
+  font-size: 18px;
+  height: 54px;
+  width: 348px;
+}
+#paypal {
+  background-color: #f2ba36;
+  color: white;
+  border: 1px solid #f2ba36;
+  margin-bottom: 10px;
+  font-size: 20px;
+  height: 54px;
+  width: 348px;
+  font-weight: 900;
+}
+#g-pay {
+  background-color: #000000;
+  color: white;
+  border: 1px solid #000000;
+  font-size: 18px;
+  height: 54px;
+  width: 348px;
+}
+#checkout:hover {
+  cursor: pointer;
+  outline: 2px solid #000000;
+}
+#shop-pay:hover {
+  background-color: #3a13d6;
+  cursor: pointer;
+}
+#paypal:hover {
+  background-color: #dda729;
+  cursor: pointer;
+}
+#g-pay:hover {
+  background-color: #000000da;
+  cursor: pointer;
+}
+.shop-pay-span {
+  background-color: white;
+  color: #5a31f4;
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 2px;
+  border-radius: 2px;
+}
+#featured-sec {
+  width: 75%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#featured-sec-title {
+  font-size: 24px;
+  line-height: 31px;
+  color: #121212;
+  font-weight: 400;
+}
+#card-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+.card {
+  width: 100%;
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 14px;
+}
+.card button {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  height: 32px;
+  width: 32px;
+  margin-top: 3px;
+  font-size: 20px;
+}
+.fa-heart-o {
+  z-index: 1;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -8px;
+  color: #c9ac92;
+}
+#view-all {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  height: 45px;
+  width: 120px;
+  background-color: #000000;
+  color: white;
+}
+#view-all:hover {
+  outline: 1px solid #000000;
+  cursor: pointer;
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  #cart-sec {
+    width: 90%;
+  }
+  #cart-table {
+    width: 90%;
+  }
+  #payment-option-sec {
+    width: 90%;
+  }
+  #featured-sec {
+    width: 90%;
+  }
+}
+@media all and (min-width: 427px) and (max-width: 768px) {
+  #cart-sec {
+    width: 90%;
+  }
+  #cart-table {
+    width: 90%;
+  }
+  #table-heading {
+    gap: 30px;
+  }
+  #row {
+    gap: 30px;
+  }
+  #payment-option-sec {
+    width: 90%;
+  }
+  #featured-sec {
+    width: 90%;
+  }
+  #card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 426px) {
+  #cart-sec {
+    width: 90%;
+  }
+  #cart-table {
+    width: 90%;
+  }
+  #table-heading p:nth-child(2) {
+    display: none;
+  }
+  #table-heading p:last-child {
+    display: none;
+  }
+  #row {
+    flex-direction: column;
+    grid-template-columns: 100%;
+    gap: 10px 0px;
+  }
+  #table-heading p:last-child {
+    text-align: left !important;
+  }
+  #payment-option-sec {
+    width: 90%;
+    text-align: center;
+  }
+  #featured-sec {
+    width: 90%;
+  }
+  #card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+  }
+}

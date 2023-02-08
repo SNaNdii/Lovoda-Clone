@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/Favicon_32x32.jpg?v=1650456214"
+      type="image/x-icon"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/Cart.css" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div id="container">
+      <div id="total_I">
+        <span>Total Items: </span>
+        <span id="total">0</span>
+      </div>
+      
+      <div id="cart-sec">
+        <h1>Your cart</h1>
+        <a href="">Continue shopping</a>
+      </div>
+
+      <div id="cart-table">
+        <div id="table-heading">
+          <p>PRODUCT</p>
+          <p>QUANTITY</p>
+          <p>TOTAL</p>
+        </div>
+        <hr class="hr-bar" />
+
+        <div id="products-list"></div>
+        
+        <hr class="hr-bar" />
+      </div>
+      <div id="payment-option-sec">
+        <p id="subtotal-text" style="font-weight: bold; font-size: 20px;">Subtotal: <span style="font-weight: bold; font-size: 20px;" id="subtotal"></span></p>
+        <p class="text">or 4 interest-free payments of $49.50 with</p>
+        <p id="afterpay"><span>aftrepay</span>ⓘ</p>
+        <p class="text">
+          Taxes and <a href="javascript:void(0);">shipping</a> calculated at
+          checkout
+        </p>
+        <button onclick="NextPage()" id="checkout">Check out</button><br />
+        <button id="shop-pay">Shop<span class="shop-pay-span">Pay</span></button
+        ><br />
+        <button id="paypal">
+          <i>
+            <span style="color: #003087">Pay</span
+            ><span style="color: #009cde">Pal</span>
+          </i></button
+        ><br />
+        <button id="g-pay">G Pay</button>
+      </div>
+      <div id="featured-sec">
+        <h3 id="featured-sec-title">Featured collection</h3>
+        <div id="card-list">
+          <div class="card">
+            <button class="heart-back">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <img
+              id="prod_main_img"
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/010400034-1__46864_360x.jpg?v=1645112191"
+              alt=""
+            />
+            <p class="card-title">Straight Bar Ear Crawlers (14K)</p>
+            <p class="card-price">$15.00</p>
+          </div>
+          <div class="card">
+            <button class="heart-back">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/020100570-2__28077_533x.jpg?v=1645115455"
+              alt=""
+            />
+            <p class="card-title">Plain Gold Chain</p>
+            <p class="card-price">$14.00</p>
+          </div>
+          <div class="card">
+            <button class="heart-back">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/070700010-E-4__80373_533x.jpg?v=1645115850"
+              alt=""
+            />
+            <p class="card-title">Silk Scarf | Country Green</p>
+            <p class="card-price">$12.00</p>
+          </div>
+          <div class="card">
+            <button class="heart-back">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L201011-2__52444_533x.jpg?v=1645116103"
+              alt=""
+            />
+            <p class="card-title">Othello Layered Necklace</p>
+            <p class="card-price">$18.00</p>
+          </div>
+        </div>
+        <button id="view-all">View All</button>
+      </div>
+    </div>
+    <div id="foot-part"></div>
+  </body>
+</html>
+<script src="./scripts/Cart.js"></script>
+<script type="module">
+  import navbar from './components/navbar.js'
+  let Nav = document.getElementById('nav')
+  Nav.innerHTML = navbar();
+
+  import footer from './components/footer.js'
+  let Foot = document.getElementById('foot-part')
+  Foot.innerHTML = footer()
+</script>

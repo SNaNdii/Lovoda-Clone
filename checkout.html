@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/Favicon_32x32.jpg?v=1650456214"
+      type="image/x-icon"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style/checkout.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<body>
+    <div id="nav"></div>
+    <div id="mainBox">
+        <div id="box1">
+            <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/04122019_logo2_90x@2x.png?v=1645644264"></a>
+        </div>
+        <div id="form">
+            <div id="form1">
+                <input type="text" id="Fname" placeholder="Enter first Name">
+                <input type="text" id="Lname" placeholder="Enter last Name">
+            </div>
+                <input type="text" id="Address" placeholder="Enter Address"><br>
+                <input type="text" id="suite" placeholder="Enter Apartment, suite, etc"><br>
+            <div id="form2">
+                <input type="text" id="city" placeholder="Enter city">
+                <input type="text" id="state" placeholder="Enter your state">
+                <input type="number" id="ZipCode" placeholder="Enter Zip Code">
+            </div>
+            <input type="number" id="phone" placeholder="Enter Phone"><br>
+            <button onclick="BuyNow()">Contnue to Shipping</button>
+        </div>
+    </div>
+    <div id="foot-part"></div>
+</body>
+</html>
+<script src="./scripts/checkout.js"></script>
+<script type="module">
+    import navbar from './components/navbar.js'
+    let Nav = document.getElementById('nav')
+    Nav.innerHTML = navbar();
+
+    import footer from './components/footer.js'
+    let Foot = document.getElementById('foot-part')
+    Foot.innerHTML = footer()
+</script>

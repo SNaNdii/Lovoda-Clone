@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Social</title>
+    <link rel="icon" type="image"
+        href="//cdn.shopify.com/s/files/1/0627/7388/7215/files/Favicon_32x32.jpg?v=1650456214">
+
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/ShopSocial.css">
+</head>
+
+<body>
+    <div id="nav"></div>
+
+    <div id="head">
+        <div>Shop Our Instagram</div>
+        <p>Follow us on instagram @lovodashop</p>
+    </div>
+    <div id="grid-img-list"></div>
+    <button id="more">Lode More</button>
+
+    <div id="foot-part"></div>
+</body>
+
+</html>
+<script type="module">
+    import navbar from './components/navbar.js'
+    let Nav = document.getElementById('nav')
+    Nav.innerHTML = navbar();
+
+    import footer from './components/footer.js'
+    let Foot = document.getElementById('foot-part')
+    Foot.innerHTML = footer()
+</script>
+<script src="./scripts/ShopSocial.js"></script>

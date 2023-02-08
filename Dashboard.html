@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/Dashboard.css">
+    <title>Account - Lovoda</title>
+</head>
+<body>
+    <div id="nav"></div>
+   <div id="account">
+        <h1>Account</h1>
+        <div id="user">
+            <img src="https://www01.wellsfargomedia.com/assets/images/icons/227x140/WF_icon_person_gray_227x140.png" alt="">
+            <p id="logout">Log out</p>
+        </div>
+   </div>
+   <div id="order">
+        <div>
+            <h2>Order history</h2>
+            <p>You haven't placed any orders yet.</p>
+        </div>
+        <div>
+            <h2>Account details</h2>
+            <p id="username"></p>
+            <p id="useremail"></p>
+            <p>United States</p>
+            <br>
+            <p id="view">View addresses (1)</p>
+        </div>
+   </div>
+   <div id="foot-part"></div>
+</body>
+</html>
+<script type="module">
+    import navbar from './components/navbar.js'
+    let Nav = document.getElementById('nav')
+    Nav.innerHTML = navbar();
+
+    import footer from './components/footer.js'
+    let Foot = document.getElementById('foot-part')
+    Foot.innerHTML = footer()
+</script>
+<script src="./scripts/Dashboard.js"></script>r

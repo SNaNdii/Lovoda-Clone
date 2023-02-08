@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lovoda</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/Favicon_32x32.jpg?v=1650456214"
+      type="image/x-icon"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/product.css" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<!---------------------------------------------------------------->
+  
+  <body>
+    <div id="nav"></div>
+    
+    <div id="container">
+      <div id="top-section">
+        <div id="left-img-sec">
+          <div id="three-layer">
+            <img
+              id="main-img"
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101016-1_823x.jpg?v=1650308676"
+              alt="main-img"
+              width="100%"
+              loading="lazy"
+            />
+            <div id="sidebyside-img">
+              <img
+                id="second-img"
+                src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101016-4_823x.jpg?v=1650308683"
+                alt=""
+                loading="lazy"
+              />
+              <img
+                id="third-img"
+                class="rotateimg180"
+                src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101016-2_823x.jpg?v=1650308683"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="right-text-sec">
+          <h5 id="brand-name">LOVODA</h5>
+          <h1 id="product-title">Refined Stud Earrings</h1>
+          <p id="review-star">
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <span>Write a review</span>
+          </p>
+          <p id="comments">
+            | <i class="fa fa-comments-o" aria-hidden="true"></i> Ask a question
+          </p>
+          <p id="price">$21.00</p>
+          <p id="afterpay">
+            <span>aftrepay</span> available for orders between $35 - <br />
+            $1,000 ⓘ
+          </p>
+          <p id="shipping">
+            <a href="ShippingPolicy.html">Shipping</a> calculated at checkout.
+          </p>
+          <p id="pay-in">
+            Pay in 4 interest-free installments for orders over $50 with
+          </p>
+          <p id="shoppay">
+            <strong>Shop</strong> <span>Pay</span>
+            <a href="javascript:void(0);">Learn more</a>
+          </p>
+          <p id="quantity">Quantity</p>
+          <div id="counter">
+            <button id="dec">-</button>
+            <button id="count-num">1</button>
+            <button id="inc">+</button>
+          </div>
+          <a href="" id="continue-shopping">Continue shopping</a>
+          <button id="add-to-cart" onclick="AddCart()">Add to Cart</button>
+          <div id="Show"></div>
+          <button id="wishlist">Add to my Wishlist</button>
+          <button id="buy-it-now" onclick="BuyNow()">Buy now</button>
+          <p id="below-text">
+            Vintage gold metal with a circle of pearls and a center of small
+            stones.
+          </p>
+        </div>
+      </div>
+      <div id="free-shipping">
+        <p id="free-shipping-title">
+          <span>Free Shipping</span> <br />
+          Free shipping for orders over $75! Only applicable for US.
+        </p>
+      </div>
+      <div id="customer-review">
+        <h3 id="cus-title">CUSTOMER REVIEWS</h3>
+        <button id="ask-ques">Ask a question</button>
+        <button id="add-review">Add a review</button>
+        <div>
+          <button id="below-ask-ques">Reviews</button>
+          <button id="below-add-review">Questions</button>
+        </div>
+        <hr class="hr-bar" />
+        <p id="be-the-first">Be the first to write a <span>review</span></p>
+      </div>
+      <div id="you-may-also-like">
+        <h3 id="you-may-also-like-title">You may also like</h3>
+        <div id="card-list">
+          <div class="card">
+            <button class="heart-back">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <img
+              id="prod_main_img"
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/010400034-1__46864_360x.jpg?v=1645112191"
+              alt=""
+            />
+            <p class="card-title">Straight Bar Ear Crawlers (14K)</p>
+            <p class="card-price">$15.00</p>
+          </div>
+          <div class="card">
+            <button class="heart-back">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/020100570-2__28077_533x.jpg?v=1645115455"
+              alt=""
+            />
+            <p class="card-title">Plain Gold Chain</p>
+            <p class="card-price">$14.00</p>
+          </div>
+          <div class="card">
+            <button class="heart-back">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/070700010-E-4__80373_533x.jpg?v=1645115850"
+              alt=""
+            />
+            <p class="card-title">Silk Scarf | Country Green</p>
+            <p class="card-price">$12.00</p>
+          </div>
+          <div class="card">
+            <button class="heart-back">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L201011-2__52444_533x.jpg?v=1645116103"
+              alt=""
+            />
+            <p class="card-title">Othello Layered Necklace</p>
+            <p class="card-price">$18.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="foot-part"></div>
+  </body>
+</html>
+<script src="./scripts/product.js"></script>
+<script type="module">
+  import navbar from './components/navbar.js'
+  let Nav = document.getElementById('nav')
+  Nav.innerHTML = navbar();
+
+  import footer from './components/footer.js'
+  let Foot = document.getElementById('foot-part')
+  Foot.innerHTML = footer()
+</script>

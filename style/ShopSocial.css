@@ -1,0 +1,112 @@
+#more {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(46, 134, 250);
+    font-weight: 900;
+    border: none;
+    background-color: transparent;
+    padding: 0 0 5px 0;
+    border-bottom: 2px solid rgb(46, 134, 250);
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+
+#grid-img-list {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#grid-img-list-shop-social {
+    width: 50%;
+    margin: auto;
+}
+
+#shop-feed-list {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "A A B C D"
+        "A A E F F"
+        "G H I F F";
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#shop-feed-list>div {
+    display: grid;
+    overflow: hidden;
+}
+
+#shop-feed-list>div:nth-child(1) {
+    grid-area: A;
+}
+
+#shop-feed-list>div:nth-child(2) {
+    grid-area: B;
+}
+
+#shop-feed-list>div:nth-child(3) {
+    grid-area: C;
+}
+
+#shop-feed-list>div:nth-child(4) {
+    grid-area: D;
+}
+
+#shop-feed-list>div:nth-child(5) {
+    grid-area: E;
+}
+
+#shop-feed-list>div:nth-child(6) {
+    grid-area: F;
+}
+
+#shop-feed-list>div:nth-child(7) {
+    grid-area: G;
+}
+
+#shop-feed-list>div:nth-child(8) {
+    grid-area: H;
+}
+
+#shop-feed-list>div:nth-child(9) {
+    grid-area: I;
+}
+
+.grid-img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    z-index: 1;
+}
+
+.grid-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#head {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#head>div {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+#head>p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(76, 74, 74);
+    font-family: sans-serif;
+}

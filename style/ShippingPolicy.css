@@ -1,0 +1,41 @@
+#Shipping-contant {
+    width: 35%;
+    margin: auto;
+    margin-top: 2%;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+#Shipping-contant>h1 {
+    text-align: center;
+    font-family: Assistant, sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: rgb(53, 53, 53);
+}
+
+#Shipping-contant>h3 {
+    font-family: Assistant, sans-serif;
+    font-size: 16px;
+    margin-top: 6%;
+    font-weight: 100;
+    color: rgb(63, 63, 63);
+}
+
+#Shipping-contant>h4 {
+    margin-top: 4%;
+}
+
+#Shipping-contant>p {
+    margin-top: 2%;
+    line-height: 30px;
+    color: rgb(92, 92, 92);
+    font-family: Assistant, sans-serif;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+#last-para {
+    padding-bottom: 18%;
+}

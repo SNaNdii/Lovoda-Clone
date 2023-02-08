@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/Signup.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0627/7388/7215/files/Favicon_32x32.jpg?v=1650456214" type="image/x-icon">
+    <title>Create Account-Lovoda</title>
+</head>
+<body>
+    <div id="nav"></div>
+    <h1 id="create-header">Create account</h1>
+    <div id="Redirect">
+        <div>
+           <div class="link-box">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/512px-Facebook_f_logo_%282021%29.svg.png?20210818083032" alt="">
+            <a target="_blank" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=150722575101290&kid_directed_site=0&app_id=150722575101290&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv8.0%2Fdialog%2Foauth%3Fclient_id%3D150722575101290%26state%3D%257B%2522_sid%2522%253A%252249ce69f1-86b5-b750-0a0c-cb0bf6a18d02%2522%257D%26response_type%3Dcode%26sdk%3Dphp-sdk-5.7.0%26redirect_uri%3Dhttps%253A%252F%252Fapp.growave.io%252Flite2%252Fauth%252Ffcallback%26scope%3Demail%252Cpublic_profile%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D103f1d19-0397-4eab-bcbd-adb743579ade%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fapp.growave.io%2Flite2%2Fauth%2Ffcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522_sid%2522%253A%252249ce69f1-86b5-b750-0a0c-cb0bf6a18d02%2522%257D%23_%3D_&display=page&locale=en_GB&pl_dbl=0"><p id="fb-p">Continue with Facebook</p></a>
+           </div>
+        </div>
+        <div>
+            <div class="link-box">
+                <img id="google" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/google_logo_icon_169090.png" alt="">
+                <a target="_blank" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&access_type=offline&client_id=766683587460-nit6r0u35r0v9d3r1ft5uika3v22q5fi.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapp.growave.io%2Flite2%2Fauth%2Fgconnect&state=%7B%22_sid%22%3A%2249ce69f1-86b5-b750-0a0c-cb0bf6a18d02%22%2C%22shop%22%3A%22https%3A%5C%2F%5C%2Flaurenlee-717.myshopify.com%22%7D&scope=profile%20openid%20email&approval_prompt=force&include_granted_scopes=true&flowName=GeneralOAuthFlow"><p id="google-p">Google</p></a>
+            </div>
+        </div>
+        <div>
+            <div class="link-box">
+                <img id="amazon" src="https://apbf.dog/wp-content/uploads/2014/08/AmazonSmile-Logo.jpg" alt="">
+                <a target="_blank" href="https://na.account.amazon.com/ap/signin?_encoding=UTF8&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.pape.max_auth_age=0&ie=UTF8&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=lwa&openid.assoc_handle=amzn_lwa_na&marketPlaceId=ATVPDKIKX0DER&arb=53f7b944-8691-46be-98c2-a823961a0bef&language=en_US&openid.return_to=https%3A%2F%2Fna.account.amazon.com%2Fap%2Foa%3FmarketPlaceId%3DATVPDKIKX0DER%26arb%3D53f7b944-8691-46be-98c2-a823961a0bef%26language%3Den_US&enableGlobalAccountCreation=1&metricIdentifier=amzn1.application.a5a8c87546e446dd90f3498c27964414&signedMetricIdentifier=Ee07k1OOVc5D6XxmTwWhhEzsQ0B6Z%2BeEG4hU4hAEbOU%3D"><p id="amazon-p">Amazon</p></a>
+            </div>
+        </div>
+    </div>
+    <div id="sign-up">
+        <input type="text" id="first_name" placeholder="First name">
+        <input type="text" id="last_name" placeholder="Last name">
+        <input type="email" id="email-1" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <div id="checkbox">
+            <p>Subscribe for Newsletter</p>
+            <input type="checkbox">
+        </div>
+        <button onclick="create()" id="btn-create">Create</button>
+    </div>
+    <div id="foot-part"></div>
+    
+</body>
+</html>
+<script src="./scripts/Signup.js"></script>
+<script type="module">
+    import navbar from './components/navbar.js'
+    let Nav = document.getElementById('nav')
+    Nav.innerHTML = navbar();
+
+    import footer from './components/footer.js'
+    let Foot = document.getElementById('foot-part')
+    Foot.innerHTML = footer()
+</script>

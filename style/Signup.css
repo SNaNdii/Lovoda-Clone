@@ -1,0 +1,130 @@
+#create-header{
+    text-align: center;
+    font-family: Assistant, sans-serif;
+    margin-top: 6%;
+    font-stretch:extra-expanded;
+    font-weight:100;
+    font-size:34px;
+    letter-spacing:2px;
+    color:#121212;
+    
+}
+#Redirect{
+    /* border: 1px solid; */
+    width:28%;
+    margin: auto;
+    margin-top:2.5%;
+    height:170px;
+    display: grid;
+    align-items: center;
+}
+#Redirect>div{
+    border: 1px solid;
+    height:42px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#Redirect>div:nth-child(1){
+    border:2px solid #1877f2;
+}
+#Redirect>div:nth-child(3){
+   background-color:#ffa100;
+}
+.link-box{
+    display: flex;
+    width:50%;
+    height:30px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left:40px;
+    cursor: pointer;
+}
+.link-box>img{
+    width:11%;
+}
+#fb-p{
+    font-weight: 100;
+    color:#438ff3;
+    font-family: Assistant, sans-serif;
+    font-size:12px;
+    letter-spacing: 1px;
+}
+#amazon-p{
+    color: white;
+    font-family: Assistant, sans-serif;
+    font-weight: 100;
+    font-size:13px;
+    letter-spacing: 1px;
+    
+}
+#google{
+    width:9%;
+    margin-left: -22%;
+    
+}
+#google-p{
+    font-family: Assistant, sans-serif;
+    font-weight: 100;
+    font-size:13px;
+    letter-spacing: 1px;
+}
+#amazon{
+    margin-left: -22%;
+}
+#Redirect>div:nth-child(2){
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 0px 2px 0px;
+}
+#Redirect>div:nth-child(3){
+    border: none;
+}
+#sign-up{
+    width: 28%;
+    margin: auto;
+    margin-bottom: 2%;
+    /* height:200px; */
+
+}
+#sign-up>input{
+    width:94%;
+    padding:12px;
+    margin-top:5%;
+    font-family: Assistant, sans-serif;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 14px;
+}
+#sign-up>input:hover{
+    outline: 1.5px solid  grey;
+}
+#checkbox{
+    display: flex;
+    font-family: Assistant, sans-serif;
+    letter-spacing: 1px;
+    color: grey;
+    font-size: 14px;
+    margin-top:15px;
+}
+#btn-create{
+    padding:12px;
+    width:26%;
+    margin-top:6%;
+    margin-left:36%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: Assistant, sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+#btn-create:hover{
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);    
+}
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,424 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #121212;
+  }
+  #container {
+    width: 100%;
+  }
+  #top-section {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 65% 32%;
+    gap: 3%;
+  }
+  #three-layer {
+    display: flex;
+    flex-direction: column;
+  }
+  #sidebyside-img {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    gap: 2%;
+  }
+  #sidebyside-img img {
+    width: 49%;
+  }
+  #free-shipping {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  #free-shipping-title {
+    margin: 60px 0px;
+    line-height: 34px;
+    color: #4d4d4d;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 400;
+  }
+  #free-shipping-title span {
+    color: #121212;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+  #right-text-sec {
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 0.75);
+  }
+  #brand-name {
+    line-height: 12px;
+    font-size: 10px;
+    color: rgba(61, 61, 61, 0.75);
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  #product-title {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    margin-top: -15px;
+    color: #121212;
+  }
+  .fa-star-o {
+    color: #f7b706 ;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #review-star {
+    font-size: 22px;
+    line-height: 16px;
+    color: rgba(82, 82, 82, 0.75);
+  }
+  #review-star>span{
+    font-size: 15px;
+    line-height: 16px;
+    color: rgba(82, 82, 82, 0.75);
+    margin-bottom: 10px;
+  }
+  #comments {
+    font-size: 15px;
+    line-height: 16px;
+    color: rgba(82, 82, 82, 0.75);
+    margin-bottom: 12px;
+  }
+  #price {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    color: rgba(44, 44, 44, 0.75);
+  }
+  #afterpay {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(82, 82, 82, 0.75);
+    line-height: 29px;
+    margin-bottom: 15px;
+  }
+  #afterpay span {
+    background-color: #b2fce4;
+    color: #121212;
+    padding: 0px 10px 5px 10px;
+    border-radius: 50px;
+    font-weight: bolder;
+  }
+  #info {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 0.75);
+  }
+  #shipping {
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  #shipping a {
+    color: rgba(61, 61, 61, 0.75);
+  }
+  #pay-in {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  #shoppay {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  #shoppay strong {
+    color: #5a31f4;
+  }
+  #shoppay span {
+    background-color: #5a31f4;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  #shoppay a {
+    color: rgba(61, 61, 61, 0.75);
+  }
+  #shipping a:hover {
+    border-bottom: 2px solid black;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  #quantity {
+    font-size: 14px;
+  }
+  #counter {
+    max-width: 140px;
+    height: 50px;
+    border: 1px solid rgba(123, 123, 123, 0.75);
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  #counter button {
+    margin: auto;
+    height: 50px;
+    width: 45px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: rgba(26, 26, 26, 0.75);
+  }
+  #counter button:first-child {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #counter button:last-child {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  #continue-shopping {
+    width: fit-content;
+    text-align: end;
+    text-decoration: none;
+    color: #121212;
+    border-bottom: 1px solid #121212;
+  }
+  #continue-shopping:hover {
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid #121212;
+  }
+  #add-to-cart {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0px 10px 0px;
+    background-color: transparent;
+    font-size: 14px;
+    border: 1px solid #121212;
+  }
+  #Show>button{
+    display: block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 25px 0px;
+    font-size: 14px;
+    border: 1px solid #121212;
+  }
+  #wishlist {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    font-size: 14px;
+    border: 1px solid #121212;
+  }
+  #buy-it-now {
+    display: block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 25px 0px;
+    font-size: 14px;
+    border: 1px solid #121212;
+  }
+  #add-to-cart:hover,
+  #wishlist:hover,
+  #buy-it-now:hover {
+    outline: 2px solid #121212;
+    cursor: pointer;
+  }
+  #below-text {
+    line-height: 29px;
+  }
+  #customer-review {
+    width: 75%;
+    margin: auto;
+  }
+  #cus-title {
+    font-weight: 700;
+    line-height: 27px;
+    font-size: 16px;
+    color: rgba(18, 18, 18, 0.75);
+  }
+  #ask-ques {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #c9ac92;
+    border-radius: 5px;
+    color: #c9ac92;
+    background-color: transparent;
+  }
+  #add-review {
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #c9ac92;
+    background-color: #c9ac92;
+    color: white;
+  }
+  #add-review:hover,
+  #ask-ques:hover {
+    cursor: pointer;
+  }
+  #customer-review div {
+    display: flex;
+    margin-top: 20px;
+  }
+  #below-ask-ques {
+    width: 130px;
+    height: 40px;
+    background-color: transparent;
+  }
+  #below-add-review {
+    width: 115px;
+    height: 40px;
+    background-color: transparent;
+  }
+  #below-ask-ques,
+  #below-add-review {
+    display: block;
+    border: 3px solid transparent;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  #below-ask-ques {
+    border-bottom: 4px solid #bea38c;
+  }
+  #below-add-review {
+    font-weight: 400;
+  }
+  #below-ask-ques:hover {
+    cursor: pointer;
+  }
+  #be-the-first span {
+    color: #c9ac92;
+  }
+  #you-may-also-like {
+    width: 75%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  #you-may-also-like-title {
+    font-size: 24px;
+    line-height: 31px;
+    color: #121212;
+    font-weight: 400;
+  }
+  #card-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+  .card {
+    width: 100%;
+    position: relative;
+  }
+  .card:hover {
+    cursor: pointer;
+  }
+  .card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
+  .card-title {
+    font-size: 14px;
+  }
+  .card button {
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    height: 32px;
+    width: 32px;
+    margin-top: 3px;
+    font-size: 20px;
+  }
+  .fa-heart-o {
+    z-index: 1;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -8px;
+    color: #c9ac92;
+  }
+  .rotateimg180 {
+    transform: rotateY(180deg);
+  }
+  @media all and (min-width: 769px) and (max-width: 1024px) {
+    #top-section {
+      width: 90%;
+    }
+    #customer-review {
+      width: 90%;
+    }
+    #you-may-also-like {
+      width: 90%;
+    }
+  }
+  @media all and (min-width: 427px) and (max-width: 768px) {
+    #top-section {
+      width: 90%;
+      grid-template-columns: 50% 45%;
+    }
+    #sidebyside-img {
+      flex-direction: column;
+    }
+    #sidebyside-img img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #free-shipping {
+      width: 90%;
+    }
+    #customer-review {
+      width: 90%;
+    }
+    #you-may-also-like {
+      width: 90%;
+    }
+    #card-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media all and (max-width: 426px) {
+    #top-section {
+      width: 95%;
+      grid-template-columns: 100%;
+    }
+    #left-img-sec {
+      width: 100%;
+    }
+    #sidebyside-img {
+      display: none;
+    }
+    #sidebyside-img img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #free-shipping {
+      width: 90%;
+    }
+    #customer-review {
+      width: 90%;
+    }
+    #you-may-also-like {
+      width: 90%;
+    }
+    #card-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card img {
+      width: 100%;
+      height: 195px;
+      object-fit: cover;
+    }
+  }
+  
