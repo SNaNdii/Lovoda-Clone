@@ -29,7 +29,7 @@ Member 4- <a href="https://github.com/vishalguptadishu">vishal gupta</a><br>
 Areas of responsibilities: All the products parts like post product and fetching 
 
 <img src="https://i.ibb.co/DL086sX/Lovoda-com.png" width='100%' alt="lovoda.com" />
-![Screenshot 2023-03-04 213017](https://user-images.githubusercontent.com/108002752/222916220-957782f2-26b4-49a9-a66f-6540f93ef74e.png)
+<img src="https://user-images.githubusercontent.com/108002752/222916220-957782f2-26b4-49a9-a66f-6540f93ef74e.png" />
 
 
 <br/>
